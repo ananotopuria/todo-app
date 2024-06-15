@@ -1,6 +1,4 @@
-import { useState } from "react";
 import "./App.css";
-import Form from "./Form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Inner from "./pages/Inner";
