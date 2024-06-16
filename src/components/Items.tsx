@@ -15,7 +15,7 @@ interface ItemsProps {
 
 const Items: React.FC<ItemsProps> = ({ items, removeItem, editItem }) => {
   return (
-    <div className="items">
+    <div className="bg-red-500">
       {items.map((item) => (
         <SingleItem
           key={item.id}

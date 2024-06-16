@@ -60,10 +60,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <section className="section-center">
-      <Form addItem={addItem} />
-      <Items items={items} removeItem={removeItem} editItem={editItem} />
-    </section>
+    <div className="bg-green-900 w-full h-screen bg-cover bg-center text-center p-10">
+      <h1 className="text-white text-6xl">My tasks</h1>
+      <section className="bg-green-900 w-full h-screen flex flex-col items-center">
+        <Form addItem={addItem} />
+        <Items items={items} removeItem={removeItem} editItem={editItem} />
+      </section>
+    </div>
   );
 };
 

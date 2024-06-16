@@ -18,7 +18,7 @@ const SingleItem: React.FC<SingleItemProps> = ({
   editItem,
 }) => {
   return (
-    <div className="single-item">
+    <div className="flex justify-center gap-5">
       <input
         type="checkbox"
         checked={item.completed}
@@ -33,7 +33,7 @@ const SingleItem: React.FC<SingleItemProps> = ({
         {item.name}
       </p>
       <button
-        className="btn remove-btn"
+        className="bg-red-800"
         type="button"
         onClick={() => removeItem(item.id)}
       >
