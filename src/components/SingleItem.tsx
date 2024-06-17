@@ -18,23 +18,22 @@ const SingleItem: React.FC<SingleItemProps> = ({
   editItem,
 }) => {
   return (
-    <div className="flex gap-10">
-          <button
-            className="bg-[#97051d] hover:bg-[#ef233c] text-white font-bold rounded-md px-2 py-1 transition duration-200 ease-in-out transform hover:shadow-lg focus:shadow-outline focus:outline-none focus:ring-2 focus:ring-[#2a4038]"
-            type="button"
-            onClick={() => removeItem(item.id)}
-          >
-            x
-          </button>
+    <div className="flex gap-10 flex-wrap">
+      <button
+        className="bg-[#97051d] hover:bg-[#ef233c] text-white font-bold rounded-md px-2 py-1 transition duration-200 ease-in-out transform hover:shadow-lg focus:shadow-outline focus:outline-none focus:ring-2 focus:ring-[#2a4038] w-[2rem] h-[2rem]"
+        type="button"
+        onClick={() => removeItem(item.id)}
+      >
+        x
+      </button>
       <input
         type="checkbox"
         className="appearance-none h-6 w-6 border-2 border-[#fff] rounded-full checked:bg-[#fff] checked:border-transparent focus:outline-none transition duration-150 ease-in-out"
         checked={item.completed}
         onChange={() => editItem(item.id)}
-        
       />
-      
-      <p
+
+      <p className="max-w-full "
         style={{
           textTransform: "capitalize",
           textDecoration: item.completed ? "line-through" : "none",
