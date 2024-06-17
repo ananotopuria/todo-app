@@ -15,24 +15,25 @@ function Form({ addItem }: FormProps) {
   };
 
   return (
-
     <div className="p-4">
       {" "}
       <form className="flex flex-col space-y-2" onSubmit={handleSubmit}>
         <div className="flex">
-          <input
-            type="text"
-            className="border border-gray-300 rounded-l-md px-3 py-2 focus:outline-none focus:border-green-500"
-            placeholder="Add your task"
-            value={newItemName}
-            onChange={(e) => setNewItemName(e.target.value)}
-          />
-          <button
-            type="submit"
-            className="bg-green-500 hover:bg-green-600 text-white font-bold rounded-r-md px-4 py-2"
-          >
-            +
-          </button>
+          <div className="flex items-center space-x-2 mx-auto">
+            <input
+              type="text"
+              className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-[#2a4038] placeholder-gray-500 transition duration-200 ease-in-out transform hover:shadow-lg focus:shadow-outline focus:ring-2 focus:ring-[#2a4038] w-[15rem] md:w-[30rem]"
+              placeholder="Task name"
+              value={newItemName}
+              onChange={(e) => setNewItemName(e.target.value)}
+            />
+            <button
+              type="submit"
+              className="bg-[#3b593f] hover:bg-[#4d734c] text-white font-bold rounded-md px-4 py-2 transition duration-200 ease-in-out transform hover:shadow-lg focus:shadow-outline focus:outline-none focus:ring-2 focus:ring-[#2a4038]"
+            >
+              Add
+            </button>
+          </div>
         </div>
       </form>
     </div>

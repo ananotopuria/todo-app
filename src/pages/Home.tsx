@@ -20,8 +20,7 @@ function Home() {
           Organize, prioritize, and achieve with ease.
         </p>
         <Link to="todo">
-          <button className="cursor-pointer my-[2rem] w-[130px] h-[40px] bg-[#07693d] rounded-lg text-white hover:bg-green-700 hover:translate-y-1 hover:shadow-lg">
-          
+          <button className="cursor-pointer my-[2rem] w-[130px] h-[40px] bg-[#3b593f] rounded-lg text-white hover:bg-[#4d734c] hover:translate-y-1 hover:shadow-lg">
             Get Started
           </button>
         </Link>

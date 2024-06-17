@@ -60,9 +60,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-green-900 w-full h-screen bg-cover bg-center text-center p-10">
-      <h1 className="text-white text-6xl">My tasks</h1>
-      <section className="bg-green-900 w-full h-screen flex flex-col items-center">
+    <div className="bg-[#172621] w-full h-screen bg-cover bg-center text-center">
+      <section className="bg-[#172621]  w-full h-screen">
+        <h1 className="text-white text-6xl p-4">Taskboard</h1>
         <Form addItem={addItem} />
         <Items items={items} removeItem={removeItem} editItem={editItem} />
       </section>
